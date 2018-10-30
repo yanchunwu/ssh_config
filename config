@@ -1,0 +1,39 @@
+Host zonemaster autopick manualpick flexfeed flexcharger apickdb orchestrator kvmhost0 kvmhost1 kvmhost2 kvmhost3 kvmhost4 workstation
+  ProxyCommand ssh -W %h:%p proxy@labnuc.bos.berkshiregrey.com
+  UserKnownHostsFile /dev/null
+  StrictHostKeyChecking no
+
+Host ap0 ap_r0
+  Hostname ap0.bos.berkshiregrey.com
+  Port 5022
+  User wu
+  ForwardX11 yes
+  ForwardAgent yes
+
+Host ap_ps1
+  Hostname ap0.bos.berkshiregrey.com
+  Port 7022
+  User wu
+  ForwardX11 yes
+  ForwardAgent yes
+
+Host ap_ps0
+  Hostname ap0.bos.berkshiregrey.com
+  Port 8022
+  User wu
+  ForwardX11 yes
+  ForwardAgent yes
+
+Host ap_ss0
+  Hostname ap0.bos.berkshiregrey.com
+  Port 9022
+  User wu
+  ForwardX11 yes
+  ForwardAgent yes
+
+Host ap_ss1
+  Hostname ap0.bos.berkshiregrey.com
+  Port 10022
+  User wu
+  ForwardX11 yes
+  ForwardAgent yes
