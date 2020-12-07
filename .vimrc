@@ -171,5 +171,6 @@ let g:netrw_list_hide.=',' . ghregex
 
 " topleft', 'botright', 'leftabove', or 'rightbelow'
 let g:tagbar_position = 'leftabove vertical'
-let g:tagbar_width = 20
-nmap <F8> :TagbarToggle j<CR>
+let g:tagbar_width = 40
+let g:tagbar_autofocus = 1
+nmap <F8> :TagbarToggle<CR>
